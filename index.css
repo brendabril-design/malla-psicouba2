@@ -1,0 +1,33 @@
+body {
+  font-family: sans-serif;
+  background-color: #fdf6f9;
+  margin: 0;
+  padding: 0;
+}
+.card {
+  background-color: #f5d8ea;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.card.aprobada {
+  background-color: #963564;
+  color: white;
+  text-decoration: line-through;
+}
+.card.habilitada:hover {
+  background-color: #eec2da;
+}
+.card.deshabilitada {
+  background-color: #ddd;
+  color: #999;
+  cursor: not-allowed;
+}
+.grid {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
